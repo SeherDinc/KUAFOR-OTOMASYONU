@@ -35,11 +35,11 @@ namespace proje2
 
         private void button_kaydet_Click(object sender, EventArgs e)
         {
-            //deneme.Open();
-            //SqlCommand komut = new SqlCommand("insert into (m_ad_soyad,p_ad_soyad,tarih,saat)values('"+textBoxmusteri.Text+"','"+textBoxcalısan.Text+"','"+dateTimePicker1.Text+"','"+comboBox_saat.Text+"'");
-            //komut.ExecuteNonQuery();
-            //komut.CommandText="insert into randevudolu(personal_adı,saat)values('"+comboBox_saat+"')'";
-            //komut.CommandText="delete from randevuol "
+            deneme.Open();
+            SqlCommand komut = new SqlCommand("insert into (m_ad_soyad,p_ad_soyad,tarih,saat)values('"+textBoxmusteri.Text+"','"+textBoxcalısan.Text+"','"+dateTimePicker1.Text+"','"+comboBox_saat.Text+"'");
+            komut.ExecuteNonQuery();
+            komut.CommandText="insert into randevudolu(personal_adı,saat)values('"+comboBox_saat+"')'";
+            komut.CommandText="delete from randevuol "
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
