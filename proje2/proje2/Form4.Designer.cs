@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView_randevu = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_randevu)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView_randevu
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.OldLace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(545, 253);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView_randevu.BackgroundColor = System.Drawing.Color.OldLace;
+            this.dataGridView_randevu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_randevu.Location = new System.Drawing.Point(12, 33);
+            this.dataGridView_randevu.Name = "dataGridView_randevu";
+            this.dataGridView_randevu.Size = new System.Drawing.Size(545, 253);
+            this.dataGridView_randevu.TabIndex = 0;
             // 
             // Form4
             // 
@@ -47,17 +47,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(569, 326);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView_randevu);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_randevu)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_randevu;
     }
 }

@@ -23,7 +23,7 @@ namespace proje2
             SqlDataAdapter da = new SqlDataAdapter(randevu,deneme);
             DataSet ds = new DataSet();
             da.Fill(ds);
-            dataGridView1.DataSource = ds.Tables[0];
+            dataGridView_randevu.DataSource = ds.Tables[0];
         }
         private void Form4_Load(object sender, EventArgs e)
         {

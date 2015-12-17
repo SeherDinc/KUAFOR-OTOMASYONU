@@ -10,3 +10,14 @@ c:\users\seher\documents\visual studio 2013\Projects\proje2\proje2\obj\Debug\pro
 C:\Users\seher\documents\visual studio 2013\Projects\proje2\proje2\obj\Debug\proje2.Form2.resources
 C:\Users\seher\documents\visual studio 2013\Projects\proje2\proje2\obj\Debug\proje2.Form3.resources
 C:\Users\seher\documents\visual studio 2013\Projects\proje2\proje2\obj\Debug\proje2.Form4.resources
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\bin\Debug\proje2.exe.config
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.exe
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.pdb
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\bin\Debug\proje2.exe
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\bin\Debug\proje2.pdb
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.csprojResolveAssemblyReference.cache
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.Form1.resources
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.Form2.resources
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.Form3.resources
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.Properties.Resources.resources
+C:\Users\seher\Source\Repos\KUAFOR-OTOMASYONU\proje2\proje2\obj\Debug\proje2.csproj.GenerateResource.Cache

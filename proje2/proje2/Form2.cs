@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Office = Microsoft.Office.Interop.Excel;
 namespace proje2
 {
     public partial class Form2 : Form
@@ -17,59 +18,59 @@ namespace proje2
             InitializeComponent();
         }
         SqlConnection deneme = new SqlConnection("Data Source=SEHER-PC\\SQLEXPRESS;Initial Catalog=projedenem;Integrated Security=True;");
+        public void veri(string randevu)
+        {
+            SqlDataAdapter da = new SqlDataAdapter(randevu, deneme);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dataGridView_randevu.DataSource = ds.Tables[0];
+        }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Form2_Load(object sender, EventArgs e)
         {
-            //deneme.Open();
-            //SqlCommand komut = new SqlCommand("select*from randevuol",deneme);
-            //SqlDataReader oku = komut.ExecuteReader();
-            //while(oku.Read())
-            //{
-            //    comboBox_saat.Items.Add(oku[0].ToString());
-            //}
+            deneme.Open();
+            SqlCommand komut = new SqlCommand("select*from randevubos",deneme);
+            SqlDataReader saat = komut.ExecuteReader();
+            while(saat.Read())
+            {
+                comboBox2.Items.Add(saat[0].ToString());
+            }
+            deneme.Close();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_kaydet_Click(object sender, EventArgs e)
+        private void buttonK_Click(object sender, EventArgs e)
         {
-            //deneme.Open();
-            //SqlCommand komut = new SqlCommand("insert into (m_ad_soyad,p_ad_soyad,tarih,saat)values('"+textBoxmusteri.Text+"','"+textBoxcalısan.Text+"','"+dateTimePicker1.Text+"','"+comboBox_saat.Text+"'");
-            //komut.ExecuteNonQuery();
-            //komut.CommandText="insert into randevudolu(personal_adı,saat)values('"+comboBox_saat+"')'";
-            //komut.CommandText="delete from randevuol "
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
+            deneme.Open();
+            SqlCommand komut = new SqlCommand("insert into randevu(m_ad_soyad,p_ad_soyad,tarih,saat,islem) values(@adi,@per,@tarihi,@saati,@islemi)",deneme);
+            komut.Parameters.AddWithValue("@adi", textBox1.Text);
+            komut.Parameters.AddWithValue("@per", comboBox1.Text);
+            komut.Parameters.AddWithValue("@tarihi", dateTimePicker1.Text);
+            komut.Parameters.AddWithValue("@saati",comboBox2.Text);
+            komut.Parameters.AddWithValue("@islemi", textBox1.Text);
+            komut.ExecuteNonQuery();
+            deneme.Close();
+            veri("select* from randevu");
+            
 
         }
 
-        private void button_sil_Click(object sender, EventArgs e)
+        private void dataGridView_randevu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void buttongor_Click(object sender, EventArgs e)
-        {
-            Form4 randevu=new Form4();
-            randevu.Show();
-
-        }
-
-        private void comboBox_saat_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
-     
-       
     }
 }

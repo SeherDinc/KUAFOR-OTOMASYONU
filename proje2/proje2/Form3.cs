@@ -21,6 +21,7 @@ namespace proje2
         {
             Form1 musteri = new Form1();
            musteri.Show();
+    
             //this.Hide();
         }
 
