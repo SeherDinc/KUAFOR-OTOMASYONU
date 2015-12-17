@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-//using Office = Microsoft.Office.Interop.Excel;
 namespace proje2
 {
     public partial class Form2 : Form
