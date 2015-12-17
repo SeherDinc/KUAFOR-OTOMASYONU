@@ -94,5 +94,10 @@ namespace proje2
             deneme.Close();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
