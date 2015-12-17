@@ -42,7 +42,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxcalısan = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -80,6 +80,7 @@
             this.comboBox_saat.Name = "comboBox_saat";
             this.comboBox_saat.Size = new System.Drawing.Size(184, 27);
             this.comboBox_saat.TabIndex = 9;
+            this.comboBox_saat.SelectedIndexChanged += new System.EventHandler(this.comboBox_saat_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
@@ -172,12 +173,18 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Personel Adı Soyadı:";
             // 
-            // textBoxcalısan
+            // comboBox1
             // 
-            this.textBoxcalısan.Location = new System.Drawing.Point(209, 54);
-            this.textBoxcalısan.Name = "textBoxcalısan";
-            this.textBoxcalısan.Size = new System.Drawing.Size(121, 27);
-            this.textBoxcalısan.TabIndex = 16;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1-DenizSAVUMLU",
+            "2-BurcuSAVUMLU",
+            "3-HavvaYALAVEŞ",
+            "4-SedaTEPE"});
+            this.comboBox1.Location = new System.Drawing.Point(209, 54);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 27);
+            this.comboBox1.TabIndex = 16;
             // 
             // Form2
             // 
@@ -186,7 +193,7 @@
             this.BackColor = System.Drawing.Color.Bisque;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(569, 326);
-            this.Controls.Add(this.textBoxcalısan);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
@@ -227,6 +234,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxcalısan;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

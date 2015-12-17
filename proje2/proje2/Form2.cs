@@ -19,13 +19,13 @@ namespace proje2
         SqlConnection deneme = new SqlConnection("Data Source=SEHER-PC\\SQLEXPRESS;Initial Catalog=projedenem;Integrated Security=True;");
         private void Form2_Load(object sender, EventArgs e)
         {
-            deneme.Open();
-            SqlCommand komut = new SqlCommand("select*from randevuol",deneme);
-            SqlDataReader oku = komut.ExecuteReader();
-            while(oku.Read())
-            {
-                comboBox_saat.Items.Add(oku[0].ToString());
-            }
+            //deneme.Open();
+            //SqlCommand komut = new SqlCommand("select*from randevuol",deneme);
+            //SqlDataReader oku = komut.ExecuteReader();
+            //while(oku.Read())
+            //{
+            //    comboBox_saat.Items.Add(oku[0].ToString());
+            //}
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -35,11 +35,11 @@ namespace proje2
 
         private void button_kaydet_Click(object sender, EventArgs e)
         {
-            deneme.Open();
-            SqlCommand komut = new SqlCommand("insert into (m_ad_soyad,p_ad_soyad,tarih,saat)values('"+textBoxmusteri.Text+"','"+textBoxcalısan.Text+"','"+dateTimePicker1.Text+"','"+comboBox_saat.Text+"'");
-            komut.ExecuteNonQuery();
-            komut.CommandText="insert into randevudolu(personal_adı,saat)values('"+comboBox_saat+"')'";
-            komut.CommandText="delete from randevuol "
+            //deneme.Open();
+            //SqlCommand komut = new SqlCommand("insert into (m_ad_soyad,p_ad_soyad,tarih,saat)values('"+textBoxmusteri.Text+"','"+textBoxcalısan.Text+"','"+dateTimePicker1.Text+"','"+comboBox_saat.Text+"'");
+            //komut.ExecuteNonQuery();
+            //komut.CommandText="insert into randevudolu(personal_adı,saat)values('"+comboBox_saat+"')'";
+            //komut.CommandText="delete from randevuol "
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -61,6 +61,11 @@ namespace proje2
         {
             Form4 randevu=new Form4();
             randevu.Show();
+
+        }
+
+        private void comboBox_saat_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
 
