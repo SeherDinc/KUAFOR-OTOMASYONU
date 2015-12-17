@@ -28,7 +28,7 @@ namespace proje2
         {
             Form2 randevu = new Form2();
             randevu.Show();
-            /this.Hide();
+            //this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
