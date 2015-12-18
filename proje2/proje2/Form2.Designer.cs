@@ -37,13 +37,10 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.buttonS = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView_randevu = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_randevu)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +48,7 @@
             // buttonK
             // 
             this.buttonK.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonK.Location = new System.Drawing.Point(186, 218);
+            this.buttonK.Location = new System.Drawing.Point(111, 218);
             this.buttonK.Name = "buttonK";
             this.buttonK.Size = new System.Drawing.Size(106, 36);
             this.buttonK.TabIndex = 0;
@@ -140,33 +137,16 @@
             this.comboBox2.TabIndex = 8;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(386, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(382, 23);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 19);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Adı ve soyadı:";
-            // 
             // buttonS
             // 
             this.buttonS.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.buttonS.Location = new System.Drawing.Point(386, 103);
+            this.buttonS.Location = new System.Drawing.Point(386, 86);
             this.buttonS.Name = "buttonS";
             this.buttonS.Size = new System.Drawing.Size(106, 36);
             this.buttonS.TabIndex = 11;
             this.buttonS.Text = "İptal";
             this.buttonS.UseVisualStyleBackColor = true;
+            this.buttonS.Click += new System.EventHandler(this.buttonS_Click);
             // 
             // button1
             // 
@@ -187,6 +167,7 @@
             this.dataGridView_randevu.Name = "dataGridView_randevu";
             this.dataGridView_randevu.Size = new System.Drawing.Size(304, 253);
             this.dataGridView_randevu.TabIndex = 13;
+            this.dataGridView_randevu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_randevu_CellClick);
             this.dataGridView_randevu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_randevu_CellContentClick);
             // 
             // label6
@@ -198,15 +179,6 @@
             this.label6.Size = new System.Drawing.Size(48, 19);
             this.label6.TabIndex = 14;
             this.label6.Text = "İslem:";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(380, 150);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 27);
-            this.comboBox3.TabIndex = 15;
             // 
             // comboBox4
             // 
@@ -228,13 +200,10 @@
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(880, 326);
             this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView_randevu);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonS);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
@@ -264,13 +233,10 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonS;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView_randevu;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
     }
 }
