@@ -77,7 +77,7 @@ namespace proje2
             string d_tarihi=dataGridView1.Rows[secili].Cells[2].Value.ToString();
             string telefon=dataGridView1.Rows[secili].Cells[3].Value.ToString();
             string mail = dataGridView1.Rows[secili].Cells[4].Value.ToString();
-
+            
             textBox_ad.Text = m_ad_soyad;
             textBox_yas.Text = yas;
             textBox_dogum.Text = d_tarihi;
